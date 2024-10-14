@@ -5,6 +5,17 @@ body {
   background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -12,8 +23,13 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-
+img {
+  display: block;
+}
 address {
   font-style: normal;
 }
@@ -22,7 +38,29 @@ button {
   cursor: pointer;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -34,6 +72,9 @@ button {
   color: #4d5ae5;
   line-height: 1.17;
 }
+.header-logo {
+  margin-right: 76px;
+}
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -44,6 +85,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.contact-list {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
 }
 .contact-link {
   font-weight: 400;
@@ -71,8 +117,12 @@ button {
 /*main*/
 .home-page {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .home-title {
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
@@ -80,26 +130,44 @@ button {
   line-height: 1.07;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 .home-button {
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
 }
 .home-button:hover,
 .home-button:focus {
   background-color: #404bbf;
 }
-
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  width: calc((100% - 3 * 24) / 4);
+}
 .advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .advantages-tex {
   font-weight: 400;
@@ -111,6 +179,8 @@ button {
 
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-weight: 700;
@@ -121,9 +191,22 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
   background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: calc((100% - 3 * 24px) / 4);
+}
+.team-card-tex {
+  padding: 32px 16px;
+  text-align: center;
 }
 .team-subtitle {
   font-weight: 500;
@@ -131,6 +214,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .team-tex {
   font-weight: 400;
@@ -148,6 +232,28 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-bottom: 120px;
+}
+
+.portfolio-item {
+  padding-bottom: 32px;
+  flex-basis: calc((100% - 3 * 24px) / 6);
+}
+.portfolio-card-tex {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 .portfolio-subtitle {
   font-weight: 500;
@@ -155,6 +261,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  margin-bottom: 8px;
 }
 .portfolio-tex {
   font-weight: 400;
@@ -165,8 +273,14 @@ button {
 }
 
 /*footer*/
-.page-footer {
+.footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-container {
+  max-width: 264px;
+  margin-left: 156px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
@@ -177,4 +291,5 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-top: 16px;
 }
