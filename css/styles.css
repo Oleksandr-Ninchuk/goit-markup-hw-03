@@ -47,8 +47,7 @@ button {
 
 /* --------------------------------- header--------------------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -162,11 +161,12 @@ button {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
+  margin: -1px;
+  overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 .advantages-list {
