@@ -45,7 +45,7 @@ button {
   margin: 0 auto;
 }
 
-/* header */
+/* --------------------------------- header--------------------------------- */
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -89,6 +89,8 @@ button {
 .contact-list {
   display: flex;
   gap: 40px;
+}
+.header-contacts {
   margin-left: auto;
 }
 .contact-link {
@@ -279,7 +281,6 @@ button {
   padding-bottom: 100px;
 }
 .footer-container {
-  max-width: 264px;
   margin-left: 156px;
 }
 .footer-logo .logo-part {
@@ -292,4 +293,5 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   padding-top: 16px;
+  max-width: 264px;
 }
