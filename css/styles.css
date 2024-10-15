@@ -48,9 +48,9 @@ button {
 /* --------------------------------- header--------------------------------- */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
 }
 .header-container {
-  padding: 24px 0;
   display: flex;
 }
 .header-nav {
@@ -60,6 +60,10 @@ button {
 .nav-list {
   display: flex;
   gap: 40px;
+}
+.header a {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -92,6 +96,8 @@ button {
 }
 .header-contacts {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .contact-link {
   font-weight: 400;
