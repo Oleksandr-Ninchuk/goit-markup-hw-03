@@ -49,6 +49,7 @@ button {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -147,6 +148,7 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
+  min-width: 169px;
 }
 .home-button:hover,
 .home-button:focus {
@@ -155,6 +157,17 @@ button {
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 .advantages-list {
   display: flex;
@@ -169,7 +182,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-tex {
   font-weight: 400;
@@ -193,7 +206,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -202,12 +215,11 @@ button {
 
 .team-item {
   background-color: #ffffff;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 .team-card-tex {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 .team-subtitle {
@@ -216,7 +228,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-tex {
   font-weight: 400;
@@ -225,7 +237,10 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -234,8 +249,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -250,9 +264,7 @@ button {
   flex-basis: calc((100% - 3 * 24px) / 6);
 }
 .portfolio-card-tex {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -286,12 +298,15 @@ button {
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-tex {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
   max-width: 264px;
 }
